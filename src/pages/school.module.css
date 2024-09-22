@@ -1,0 +1,163 @@
+/* school.module.css */
+
+/* General Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f3f7fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for Page Content */
+.container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* About School Section */
+.aboutSchool {
+    background-color: #edf2f7;
+    padding: 30px;
+    margin-bottom: 40px;
+    border-left: 5px solid #007acc;
+    border-radius: 8px;
+}
+
+.aboutSchool h5 {
+    font-size: 1.2rem;
+    color: #2c3e50;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+/* Styling the Location Section */
+.Location {
+    text-align: center;
+    padding: 30px;
+    background-color: #f0f4f8;
+    margin: 20px auto;
+    border-radius: 10px;
+    border: 1px solid #d6d9de;
+    max-width: 900px;
+}
+
+.Location h2 {
+    font-size: 2.2rem;
+    color: #007acc;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+.Location iframe {
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Location iframe:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Navbar Styling */
+nav {
+    background-color: #007acc;
+    padding: 15px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    margin: 0 15px;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #f0f4f8;
+}
+
+/* Footer Styling */
+footer {
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.Header{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Responsive for 480px */
+/* Responsive Adjustments for Screens 480px and below */
+@media (max-width: 480px) {
+    .container {
+        padding: 20px;
+    }
+
+    .aboutSchool {
+        padding: 20px;
+    }
+
+    .aboutSchool h5 {
+        font-size: 1rem; /* Smanjenje veličine teksta */
+    }
+
+    .Location {
+        padding: 20px;
+    }
+
+    .Location h2 {
+        font-size: 1.5rem; /* Smanjenje veličine naslova */
+    }
+
+    nav a {
+        font-size: 0.9rem; /* Smanjenje veličine linkova */
+        margin: 0 10px; /* Manji razmak između linkova */
+    }
+
+    footer p {
+        font-size: 0.9rem; /* Smanjenje veličine teksta u footer-u */
+    }
+
+    .Header {
+        font-size: 1.5rem; /* Smanjenje veličine naslova */
+    }
+}
+
+/* Responsive Adjustments for Screens 768px and below */
+@media (max-width: 768px) {
+    .container {
+        padding: 30px;
+    }
+
+    .aboutSchool {
+        padding: 25px;
+    }
+
+    .Location {
+        padding: 25px;
+    }
+
+    nav {
+        padding: 10px 0;
+    }
+
+    .Location iframe {
+        width: 100%; /* Osigurati da se iframe prilagođava širini ekrana */
+    }
+}

@@ -1,0 +1,147 @@
+/* contact.module.css */
+.containerInfo {
+    width: 60%;
+    margin: 20px auto;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.infoRow {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    margin: 10px 0;
+}
+
+.label {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #333;
+    width: 40%;
+}
+
+.value1, .value2, .value3 {
+    width: 60%;
+    text-align: right;
+    font-size: 1.1em;
+}
+
+.value1 {
+    color: #007acc; 
+}
+
+.value2 {
+    color: #28a745; 
+}
+
+.value3 {
+    color: #dc3545;
+    text-decoration: none; /* Added to remove text-decoration */
+}
+
+.value3 a {
+    text-decoration: none; /* Ensures no underline for mailto link */
+    color: inherit; /* Inherits the red color (#dc3545) */
+}
+
+.value3 a:hover {
+    color: #b22222; /* Slightly darker red for hover effect */
+}
+
+.contactHeader {
+    text-align: center;
+    font-size: 2.2em;
+    color: #343a40;
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.jpgContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.schooljpg {
+    max-width: 80%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+a{
+    text-decoration: none;
+}
+
+.value3 a:hover {
+    color: #b22222; 
+}
+
+/* Responsive for 480px */
+@media (max-width: 480px) {
+    .containerInfo {
+        width: 90%; /* Smanjujem širinu za manje ekrane */
+        padding: 15px;
+    }
+
+    .infoRow {
+        flex-direction: column; /* Postavljam elemente jedan ispod drugog */
+        text-align: left;
+    }
+
+    .label {
+        font-size: 1rem; /* Smanjujem veličinu fonta */
+        width: 100%;
+        margin-bottom: 5px; /* Dodajem prostor između label i value */
+    }
+
+    .value1, .value2, .value3 {
+        width: 100%; /* Elementi će zauzimati celu širinu */
+        text-align: left; /* Poravnavam tekst sa leve strane */
+        font-size: 1rem;
+    }
+
+    .contactHeader {
+        font-size: 1.8rem; /* Smanjujem veličinu naslova */
+        margin-top: 15px;
+    }
+
+    .schooljpg {
+        max-width: 100%; /* Slika će zauzimati celu širinu */
+    }
+}
+
+/* Responsive for 768px */
+@media (max-width: 768px) {
+    .containerInfo {
+        width: 80%; /* Blago smanjujem širinu */
+        padding: 18px;
+    }
+
+    .infoRow {
+        flex-direction: column; /* Postavljam elemente jedan ispod drugog */
+        text-align: left;
+    }
+
+    .label {
+        font-size: 1.1rem; /* Smanjujem font */
+        width: 100%;
+    }
+
+    .value1, .value2, .value3 {
+        width: 100%;
+        text-align: left;
+        font-size: 1rem;
+    }
+
+    .contactHeader {
+        font-size: 2rem; /* Blago smanjujem naslov */
+    }
+
+    .schooljpg {
+        max-width: 90%;
+    }
+}

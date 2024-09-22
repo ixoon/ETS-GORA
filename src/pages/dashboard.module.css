@@ -1,0 +1,166 @@
+.dashboardContainer {
+    width: 80%;
+    max-width: 800px;
+    margin: 50px auto 100px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.dashboardHeader {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.dashboardForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.dashboardInput {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.dashboardTextarea {
+    width: 100%;
+    height: 500px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    resize: vertical;
+}
+
+.dashboardInput:focus,
+.dashboardTextarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.dashboardButton,
+.dashboardLogoutButton {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dashboardButton:hover,
+.dashboardLogoutButton:hover {
+    background-color: #0056b3;
+}
+
+.dashboardLogoutButtonContainer {
+    display: flex;
+    justify-content: flex-end; /* Centriranje ili desno poravnanje dugmeta */
+    margin-bottom: 10px; /* Razmak od drugih elemenata */
+}
+
+.dashboardLogoutButton {
+    position: absolute;
+    top: 0;
+    margin-right: 20px;
+    margin-top: 5px;
+    padding: 10px;
+    background-color: #dc3545;
+    color: white;
+    font-weight: bold;
+    border-radius: 15px;
+}
+
+.dashboardLogoutButton:hover {
+    background-color: #c82333;
+}
+
+.dashboardWelcome {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+/* Responsive for 480px */
+@media (max-width: 480px) {
+    .dashboardContainer {
+        width: 95%; /* Povećavam širinu da zauzima skoro ceo ekran */
+        padding: 10px;
+        margin: 30px auto;
+    }
+
+    .dashboardHeader {
+        font-size: 18px; /* Smanjujem veličinu naslova */
+    }
+
+    .dashboardForm {
+        gap: 10px; /* Smanjujem razmak između input polja */
+    }
+
+    .dashboardInput, .dashboardTextarea {
+        font-size: 14px; /* Smanjujem veličinu fonta u inputima i tekstualnim poljima */
+        padding: 8px;
+    }
+
+    .dashboardTextarea {
+        height: 300px; /* Smanjujem visinu tekstualnog polja */
+    }
+
+    .dashboardButton,
+    .dashboardLogoutButton {
+        font-size: 14px; /* Smanjujem veličinu dugmeta */
+        padding: 8px 10px;
+    }
+
+    .dashboardLogoutButton {
+        top: 10px;
+        right: 10px;
+        margin-right: 10px; /* Pomeram logout dugme */
+    }
+}
+
+/* Responsive for 768px */
+@media (max-width: 768px) {
+    .dashboardContainer {
+        width: 90%; /* Povećavam širinu kontejnera */
+        padding: 15px;
+    }
+
+    .dashboardHeader {
+        font-size: 22px; /* Blago smanjujem veličinu naslova */
+    }
+
+    .dashboardForm {
+        gap: 12px;
+    }
+
+    .dashboardInput, .dashboardTextarea {
+        font-size: 15px;
+        padding: 9px;
+    }
+
+    .dashboardTextarea {
+        height: 400px;
+    }
+
+    .dashboardButton,
+    .dashboardLogoutButton {
+        font-size: 15px;
+        padding: 9px 12px;
+    }
+
+    .dashboardLogoutButton {
+        top: 10px;
+        right: 15px;
+    }
+}
+

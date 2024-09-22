@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Home from "./pages/home";
+import Admin from "./pages/admin";
+import Dashboard from "./pages/dashboard";
+import ProtectedRoute from "./components/protectedRoute";
+import AnnouncementDetails from './pages/announcementDetail';
+import School from "./pages/school";
+import Professors from "./pages/professors";
+import Contact from "./pages/contact";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Layout from "./components/layout"; // Importuj Layout
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />}/>
+        <Route path="/home" element={<Home />}/>
+        <Route path="/admin" element={<Admin />}/>
+        <Route path="/admin/dashboard" element={<ProtectedRoute><Layout><Dashboard /></Layout></ProtectedRoute>}/>
+        <Route path="/announcement/:id" element={<Layout><AnnouncementDetails /></Layout>} />
+        <Route path="/skola" element={<Layout><School /></Layout>}/>
+        <Route path="/organizacija" element={<Layout><Professors /></Layout>}/>
+        <Route path="/kontakt" element={<Layout><Contact /></Layout>}/>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

@@ -1,0 +1,91 @@
+.scheduleContainer {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 80%;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table th, .table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+.table th {
+    background-color: #007acc;
+    color: white;
+}
+
+.table td {
+    background-color: #ffffff;
+}
+
+.table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.table tr:hover {
+    background-color: #e0e7ff;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+/* Responsive for 480px */
+/* Responsive for 480px */
+/* Responsive for 480px */
+@media (max-width: 480px) {
+    .scheduleContainer {
+        padding: 6px; /* Još manje paddinga */
+        max-width: 95%;
+    }
+
+    h2 {
+        font-size: 1rem; /* Manja veličina fonta za naslov */
+    }
+
+    .table {
+        width: 100%; /* Povećavam širinu tabele */
+        font-size: 0.5rem; /* Još manji font za tabelu */
+    }
+
+    .table th, .table td {
+        padding: 3px; /* Minimalan padding unutar ćelija */
+    }
+}
+
+/* Responsive for 768px */
+@media (max-width: 768px) {
+    .scheduleContainer {
+        padding: 10px; /* Smanjujem padding */
+        max-width: 90%;
+    }
+
+    h2 {
+        font-size: 1.2rem; /* Manja veličina fonta za naslov */
+    }
+
+    .table {
+        width: 100%; /* Povećavam širinu tabele */
+        font-size: 0.6rem; /* Malo manji font */
+    }
+
+    .table th, .table td {
+        padding: 5px; /* Smanjujem padding unutar ćelija */
+    }
+}
+
+
+

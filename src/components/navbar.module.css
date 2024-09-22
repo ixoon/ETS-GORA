@@ -1,0 +1,137 @@
+
+.container{
+    width: 100%;
+    background-color: black;
+    height: 80px;
+    margin-bottom: 500px;
+}
+
+.image{
+    display: flex;
+}
+
+img{
+    width: 1280px;
+    height: 400px;
+    margin-top: 80px;
+}
+
+.header {
+    display: flex;
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 70px;
+    background-color: black;
+}
+
+.link{
+    color: white;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: #005ea6;
+}
+
+.dropdownContainer {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown {
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    border-radius: 4px;
+    padding: 10px 0;
+    text-align: left;
+}
+
+.dropdownLink {
+    color: #007acc;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 1rem;
+}
+
+.dropdownLink:hover {
+    background-color: #f0f4f8;
+    color: #005ea6;
+    text-decoration: underline;
+}
+
+/* Responsive for 480px */
+@media (max-width: 480px) {
+    .container {
+        height: 60px;
+    }
+
+    .image img {
+        width: 100%; /* Slika će zauzimati celu širinu */
+        height: auto; /* Zadržavanje proporcija */
+        margin-top: 10px;
+    }
+
+    .header {
+        top: 5%; /* Pomereno radi boljeg izgleda */
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 0.5rem; /* Manje veličine fonta */
+    }
+
+    .links {
+        flex-direction: column; /* Linkovi će biti prikazani vertikalno */
+        height: auto;
+    }
+
+    .link {
+        margin: 5px 0; /* Dodajem marginu između linkova */
+        font-size: 0.9rem; /* Manja veličina fonta */
+    }
+}
+
+/* Responsive for 768px */
+@media (max-width: 768px) {
+    .container {
+        height: 70px;
+    }
+
+    .image img {
+        width: 100%; /* Slika će zauzimati celu širinu */
+        height: auto;
+    }
+
+    .header {
+        font-size: 1.5rem;
+        position: absolute;
+        left: 110px;
+        top: 230px; /* Malo smanjujem font za ovaj ekran */
+    }
+
+    .links {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .link {
+        margin: 8px 0;
+        font-size: 1rem; /* Održavam pristojnu veličinu fonta */
+    }
+}

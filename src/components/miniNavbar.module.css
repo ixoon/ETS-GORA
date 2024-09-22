@@ -1,0 +1,52 @@
+/* miniNavbar.module.css */
+
+/* General Navbar Container */
+.links {
+    background-color: #007acc;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for Navbar Links */
+.link {
+    display: inline-block;
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin: 0 20px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.link:hover {
+    color: #f0f4f8; /* Lighter color on hover */
+    text-decoration: underline;
+}
+
+.link:active {
+    color: #cce7ff; /* Even lighter when clicked */
+}
+
+/* Responsive Adjustments */
+/* Responsive for 480px */
+@media (max-width: 480px) {
+    .links {
+        padding: 10px 0;
+    }
+
+    .link {
+        font-size: 1rem;
+        margin: 8px 0;
+    }
+}
+
+/* Responsive for 768px */
+@media (max-width: 768px) {
+    .link {
+        display: block;
+        margin: 10px 0;
+        font-size: 1.1rem;
+    }
+}
+

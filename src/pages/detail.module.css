@@ -1,0 +1,97 @@
+.detailsContainer {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    background-color: #f4f4f4;
+}
+
+.announcementDetails {
+    max-width: 800px;
+    padding: 1.5rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    white-space: pre-wrap;
+    border: 1px solid #ddd;
+    position: relative; /* Ostavlja ovaj stil ako je potrebno za dekoraciju */
+}
+
+.announcementDetails h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 0.5rem;
+}
+
+.announcementDetails p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.announcementDetails br {
+    display: block;
+    margin: 1rem 0;
+}
+
+.announcementDetails pre {
+    white-space: pre-wrap;
+}
+
+.announcementDetails::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background: linear-gradient(to right, #007BFF, #00CFFF);
+    border-radius: 8px 8px 0 0;
+    z-index: -1;
+}
+
+/* Responsive for 480px */
+@media (max-width: 480px) {
+    .detailsContainer {
+        padding: 1rem; /* Smanjujem padding za manje ekrane */
+    }
+
+    .announcementDetails {
+        width: 100%; /* Povećavam širinu da zauzima ceo ekran */
+        padding: 1rem; /* Smanjujem padding unutar kontejnera */
+        font-size: 14px; /* Smanjujem osnovnu veličinu fonta */
+    }
+
+    .announcementDetails h1 {
+        font-size: 22px; /* Smanjujem veličinu naslova */
+        margin-bottom: 0.8rem;
+    }
+
+    .announcementDetails p {
+        font-size: 14px; /* Smanjujem veličinu teksta u paragrafima */
+        margin-bottom: 0.8rem;
+    }
+}
+
+/* Responsive for 768px */
+@media (max-width: 768px) {
+    .detailsContainer {
+        padding: 1.5rem; /* Blago smanjujem padding */
+    }
+
+    .announcementDetails {
+        width: 95%; /* Skoro ceo ekran za 768px */
+        padding: 1.25rem; /* Smanjujem padding */
+    }
+
+    .announcementDetails h1 {
+        font-size: 24px; /* Blago smanjujem naslov */
+    }
+
+    .announcementDetails p {
+        font-size: 15px; /* Blago smanjujem veličinu teksta */
+    }
+}
+
